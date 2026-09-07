@@ -70,7 +70,7 @@ VARIABLE(SWIFT_DEBUG_ENABLE_CACHE_PROTOCOL_CONFORMANCES_BY_TYPE_DESCRIPTOR,
 VARIABLE(SWIFT_DEBUG_CONCURRENCY_ENABLE_COOPERATIVE_QUEUES, bool, true,
          "Enable dispatch cooperative queues in the global executor.")
 
-VARIABLE(SWIFT_WASI_EXECUTOR_THREADS, uint32, 0,
+VARIABLE(SWIFT_WASI_EXECUTOR_THREADS, uint32_t, 0,
          "Number of worker threads in the wasm32-unknown-wasip1-threads global "
          "executor's pool (0 = automatic: the online CPU count when the host "
          "reports one, else 4; capped at 16).")
